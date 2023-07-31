@@ -21,12 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: none;
+  /* border: 1px solid red; */
 }
 
 input {
-  width: 60%;
-  padding: 0.3rem 0.5rem;
+  width: 40%;
+  padding: 0.4rem 0.5rem;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border: 1px solid rgb(128, 121, 121);
@@ -37,7 +37,6 @@ input:focus {
   border: none;
 }
 
-
 button {
   width: 70px;
   padding: 0.4rem;
@@ -46,4 +45,22 @@ button {
   background-color: blue;
   color: white;
   margin-left: -1px;
+}
+
+/* breakpoint */
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  input {
+    width: 55%;
+  }
+}
+
+
+
+/* handphone */
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  input {
+    width: 65%;
+  }
 }
