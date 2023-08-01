@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 input {
@@ -30,6 +29,7 @@ input {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border: 1px solid rgb(128, 121, 121);
+
 }
 
 input:focus {
@@ -40,11 +40,12 @@ input:focus {
 button {
   width: 70px;
   padding: 0.4rem;
-  border-radius: 5px;
-  border: 1px solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid blue;
   background-color: blue;
   color: white;
-  margin-left: -1px;
+  margin-left: 0.9px;
 }
 
 .container-cards {
