@@ -50,11 +50,11 @@ button {
 
 .container-cards {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 7rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -73,7 +73,7 @@ button {
     width: 55%;
   }
   .container-cards {
-    padding: 2rem;
+    padding: 2rem 4rem;
     gap: 1rem;
   }
   .container-cards .card {
@@ -88,7 +88,7 @@ button {
     width: 65%;
   }
   .container-cards {
-    padding: 2.5rem;
+    padding: 2rem 4rem;
   }
   .container-cards .card {
     width: 100%;
