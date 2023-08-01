@@ -68,9 +68,17 @@ button {
 /* breakpoint */
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   input {
     width: 55%;
+  }
+  .container-cards {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .container-cards .card {
+    width: 48%;
+    height: 380px;
   }
 }
 
@@ -80,17 +88,10 @@ button {
     width: 65%;
   }
   .container-cards {
-    width: 100%;
     padding: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
   }
   .container-cards .card {
     width: 100%;
     height: 350px;
-    border: 1px solid rgb(184, 178, 178);
   }
 }
