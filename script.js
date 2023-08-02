@@ -11,7 +11,7 @@ $.ajax({
                     <div class="card-body">
                       <h3>${m.Title}</h3>
                       <p>${m.Year}</p>
-                      <button class="show-detail">Show Detail</button>
+                      <button id="openModalBtn" class="show-detail">Show Detail</button>
                     </div>
                   </a>`;
     });
@@ -21,3 +21,7 @@ $.ajax({
     console.log(err.responseText);
   },
 });
+
+
+// Box Modal
+
