@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -47,12 +50,12 @@ input {
 input:focus {
   outline: none;
   border: none;
-  box-shadow: 0px 0px 22px -5px rgba(0,0,255,0.51);
--webkit-box-shadow: 0px 0px 22px -5px rgba(0,0,255,0.51);
--moz-box-shadow: 0px 0px 22px -5px rgba(0,0,255,0.51);
+  box-shadow: 0px 0px 22px -5px rgba(0, 0, 255, 0.51);
+  -webkit-box-shadow: 0px 0px 22px -5px rgba(0, 0, 255, 0.51);
+  -moz-box-shadow: 0px 0px 22px -5px rgba(0, 0, 255, 0.51);
 }
 
-button.search {
+button.search-button {
   width: 70px;
   padding: 0.4rem;
   border-top-right-radius: 5px;
@@ -61,6 +64,7 @@ button.search {
   background-color: blue;
   color: white;
   margin-left: -0.9px;
+  cursor: pointer;
 }
 
 .container-cards {
@@ -83,14 +87,17 @@ button.search {
   margin-bottom: 0.2rem;
 }
 
-.show-detail {
+.year {
+  margin-bottom: 0.8rem;
+}
+
+.modal-detail-button {
   padding: 0.5rem 0.5rem;
   background-color: blue;
   color: white;
   border: none;
   outline: none;
   border-radius: 5px;
-  margin-top: 0.2rem;
   cursor: pointer;
 }
 
@@ -104,14 +111,59 @@ button.search {
   height: 350px;
 }
 
- 
 /* Box Modal */
+.container-modal-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(10, 10, 10, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Menempatkan modal di atas elemen lain */ 
+}
 
+.box-modal-card {
+  background: white;
+  width: 80vmin;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
 
+.box-modal-card .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.isi-content {
+  border-bottom: 1px solid rgb(237, 228, 228);
+  border-top: 1px solid rgb(237, 228, 228);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.box-modal-card .down {
+  display: flex;
+  justify-content: flex-end;
+}
 
-
+.close-btn {
+  padding: 0.6rem 0.7rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
 
 /* breakpoint */
 
